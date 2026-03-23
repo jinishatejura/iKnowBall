@@ -12,5 +12,3 @@ Check leading goal scorers across competitions.
 Quickly find teams and matches.
 5] Filters & Sorting
 Sort matches and filter by status for better insights.
-6] Modern UI
-Clean, responsive design with dark mode aesthetics.
