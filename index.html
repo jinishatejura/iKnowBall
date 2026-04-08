@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="iknowBall — Your premium football dashboard. Live matches, league tables, and top scorers across Europe's top leagues.">
+  <title>iknowBall — Football Dashboard</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Sidebar Overlay (mobile) -->
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h1 class="logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">iknow<span class="logo-accent">Ball</span></span>
+      </h1>
+    </div>
+    <div class="sidebar-section-label">COMPETITIONS</div>
+    <ul id="competition-list" class="competition-list">
+      <!-- Rendered by JS -->
+    </ul>
+    <div class="sidebar-footer">
+      <p class="api-credit">Powered by <a href="https://www.football-data.org/" target="_blank"
+          rel="noopener">football-data.org</a></p>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <h2 id="competition-title" class="competition-title">Premier League</h2>
+      </div>
+      <div class="topbar-right">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span id="theme-icon" class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="matches">Matches</button>
+      <button class="tab-btn" data-tab="standings">Standings</button>
+      <button class="tab-btn" data-tab="scorers">Top Scorers</button>
+    </nav>
+
+    <!-- Matchday Navigation (Pagination) -->
+    <div id="matchday-nav" class="matchday-nav">
+      <button id="prev-matchday" class="matchday-btn" aria-label="Previous matchday">◀</button>
+      <span id="matchday-label" class="matchday-label">Matchday 1</span>
+      <button id="next-matchday" class="matchday-btn" aria-label="Next matchday">▶</button>
+    </div>
+
+    <!-- Search & Sort Bar -->
+    <div id="search-sort-bar" class="search-sort-bar">
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Search teams..." autocomplete="off">
+      </div>
+      <select id="sort-select" class="sort-select">
+        <option value="default">Sort: Default</option>
+        <option value="date-asc">Date ↑</option>
+        <option value="date-desc">Date ↓</option>
+        <option value="home-az">Home Team A-Z</option>
+        <option value="home-za">Home Team Z-A</option>
+      </select>
+    </div>
+
+    <!-- Dynamic Content Area -->
+    <section id="content-area" class="content-area">
+      <!-- Rendered by JS -->
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/utils.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
