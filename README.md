@@ -1,6 +1,6 @@
 # ⚽ iknowBall — Football Dashboard
 
-A premium web application that provides real-time football data across Europe's top leagues. Built as a teaching example to demonstrate JavaScript, API integration, and modern UI development.
+A premium web application that provides real-time football data across Europe's top leagues.
 
 ![iknowBall](https://img.shields.io/badge/iknowBall-Football%20Dashboard-238636?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz48dGV4dCB5PScuOWVtJyBmb250LXNpemU9JzkwJz7imr3vuI88L3RleHQ+PC9zdmc+)
 
